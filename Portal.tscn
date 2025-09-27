@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://pie1xmjalbvs"]
+
+[ext_resource type="PackedScene" uid="uid://pie1xmjalbvs" path="res://Portal.tscn" id="1_4hdyq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bagdj"]
+size = Vector2(83, 195)
+
+[node name="Area2D" type="Area2D"]
+position = Vector2(-116, -99)
+
+[node name="AnimatedSprite2D" parent="." instance=ExtResource("1_4hdyq")]
+position = Vector2(107, 98)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(115, 96)
+shape = SubResource("RectangleShape2D_bagdj")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(28, 97)
