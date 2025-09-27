@@ -172,7 +172,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lquwl"]
-size = Vector2(50, 102)
+size = Vector2(116, 102)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
 texture = ExtResource("2_h2yge")
@@ -428,7 +428,7 @@ script = ExtResource("3_1bvp3")
 [node name="Area2D" type="Area2D" parent="Player"]
 
 [node name="collisionattackright" type="CollisionShape2D" parent="Player/Area2D"]
-position = Vector2(51, -2)
+position = Vector2(4, -1)
 shape = SubResource("RectangleShape2D_lquwl")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
